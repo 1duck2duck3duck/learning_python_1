@@ -27,20 +27,21 @@
 ##doubled_num = float(num) * 2
 ##print(doubled_num)
 
-num = "10"
-num_int = int(num)
-num_mult = num_int * 20
-print(num_mult)
-
-num_2 = "3"
-num_float = float(num_2)
-num_mult_2 = num_float * 3
-print(num_mult_2)
-
-num_3 = 4
-string = "tickets"
-print(str(num_3) + " " + string)
-
-num_4 = input("please enter number 1: ")
-num_5 = input("please enter number 1: ")
-print("The product of" + num_4 + " and " + num_5 + " is " + str(int(num_4) * float(num_5)))
+##num = "10"
+##num_int = int(num)
+##num_mult = num_int * 20
+##print(num_mult)
+##
+##num_2 = "3"
+##num_float = float(num_2)
+##num_mult_2 = num_float * 3
+##print(num_mult_2)
+##
+##num_3 = 4
+##string = "tickets"
+##print(str(num_3) + " " + string)
+##
+##num_4 = input("please enter number 1: ")
+##num_5 = input("please enter number 1: ")
+##print("The product of " + num_4 + " and " + num_5 + " is " + str(int(num_4) * float(num_5)))
+##
