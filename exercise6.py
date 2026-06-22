@@ -16,7 +16,7 @@ junior_hours = 500
 print(f"Если в день заниматься {learn_in_day}, то статуса \"Junior\"(\
 {junior_hours} часов) можно достичь за {round((junior_hours / learn_in_day), 1)} дней, \
 а \"Senior\" за {round((target_senior_hours / learn_in_day), 1)} дней. Надеюсь {dog_name} \
-придаст мне сил")
+придаст мне сил.")
 
 
 print(f"Пользователь: {user_name} | Статус: {status} | Глава в книге: {current_chapter} |")
