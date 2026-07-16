@@ -1,39 +1,21 @@
-def convert_cel_to_far():
+def convert_cel_to_far(celcius):
     """Конвертирует Цельсий в Фаренгейт"""
-    fahrenheit = float(C * 9 / 5 + 32)
+    fahrenheit = float(celcius * 9 / 5 + 32)
     return fahrenheit
 
-def convert_far_to_cel():
+def convert_far_to_cel(fahrenheit):
     """Конвертирует Фаренгейт в Цельсий"""
-    celcius = float((F -32) * 5 / 9)
+    celcius = float((fahrenheit -32) * 5 / 9)
     return celcius
 
-def check_input_C():
-    """Проверка введенного Ц"""
-    if type(C) != float:
-        print("Please relaunch programm and enter num!!!")
-    else:
-        print(convert_cel_to_far())
 
-def check_input_F():
-    """Проверка введенного F"""
-    if type(F) != float:
-        print("Please relaunch programm and enter num!!!")
-    else:
-        print(convert_far_to_cel())
+#Запрашиваем у пользователя фаренгейт чтоб перевести в цельсий
+fahrenheit = int(input("Enter a temperature in degrees F:  "))
+print(f"{fahrenheit} degrees F = {convert_far_to_cel(fahrenheit):.2f} \
+degrees C")
 
-F_or_C = input("Please select a conversion(C to F or F to C):  ").upper()
 
-#Перевод из С в Ф
-if F_or_C == "C TO F":
-    C = float(input("Please enter C: "))
-    print(check_input_C())
-    
-#Перевод из Ф в С
-elif F_or_C == "F TO C":
-    F = float(input("Please enter F: "))
-    print(check_input_F())
-    
-# Защита от дураков
-else:
-    print("Incorrectly entered data. Try again.")
+#Запрашиваем у пользователя цельсий чтоб перевести в фаренгейт
+celcius = int(input("Enter a temperature in degrees C:  "))
+print(f"{celcius} degress C = {convert_cel_to_far(celcius):.2f} \
+degrees F")
